@@ -14,7 +14,7 @@
         <img src="stacked-waves-haikei_1450by200.svg" id="header-img" alt="header image">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top justify-content-center">
             <div class="container-fluid">
-                <div class="col-9 col-md-1">
+                <div class="col-6 col-md-1">
                     <button class="btn navbar-toggler btn-landing" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -35,22 +35,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-1 menu-tools">
+                <div class="col-2 col-md-1 menu-tools">
                     <button class="btn btn-outline-light" style="border: 0;"><i class="fas fa-search"></i></button>         
                 </div>
-                <div class="col-1 menu-tools">
+                <div class="col-2 col-md-1 menu-tools">
                     <button class="btn btn-outline-light" style="border: 0;"><i class="fas fa-cart-plus"></i></button>
                 </div>
-                <div class="col-1 menu-tools">
+                <div class="col-2 col-md-1  menu-tools">
                     <button class="btn btn-outline-light" style="border: 0;"><i class="fa-regular fa-user"></i></button>
                 </div>
             </div>
         </nav> 
     </header>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-8 p-0" style="color:white">
+    <main>
+        <!-- Section of Carousel Images -->
+        <section>
+                <div class="carousel-container" style="color:white">
                     <div id="carousel-product-imgs" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -59,25 +59,18 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <!-- <img src="..." alt="...1" class="d-block w-100"> -->
-                                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#777"></rect>
-                                    <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
-                                </svg>
+                                <img src="carousel.svg" alt="...1" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h4>Explore New Product Line</h4>
                                     <p>Imagine Yourself Here</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <!-- <img src="..." alt="...2" class="d-block w-100"> -->
-                                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
-                
+                                <img src="carousel2.svg" alt="...2" class="d-block w-100 img-carousel">
+                                
                             </div>
                             <div class="carousel-item">
-                                <!-- <img src="..." alt="...3" class="d-block w-100"> -->
-                                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+                                <img src="carousel3.svg" alt="...3" class="d-block w-100 img-carousel">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product-imgs" data-bs-slide="prev">
@@ -90,21 +83,91 @@
                         </button>
                     </div>
                 </div>
-                <div class="d-none d-lg-block col-lg-4 p-0" style="color:white">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="div-detail detail1">Detail 1</div>
+        </section>
+        <hr>
+        <!-- Section of Cards -->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
+                        <div class="card div-rounded" style="width:100%;">
+                            <img src="carousel3.svg" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body div-detail detail1">
+                                <div class="card-text-container">
+                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="600" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Detail 2" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#665869"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Detail2</text></svg> -->
-                            <div class="div-detail detail2 ">Detail 2</div>
+
+                    </div>
+                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
+                        <div class="card div-rounded" style="width:100%;">
+                            <img src="carousel2.svg" class="card-img-top" alt="detail image">
+                            <div class="card-body div-detail detail2">
+                                <div class="card-text-container">
+                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
+                        <div class="card div-rounded" style="width:100%;">
+                            <img src="carousel3.svg" class="card-img-top" alt="detail image">
+                            <div class="card-body div-detail detail1">
+                                <div class="card-text-container">
+                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
+                        <div class="card div-rounded" style="width:100%;">
+                            <img src="carousel2.svg" class="card-img-top" alt="detail image">
+                            <div class="card-body div-detail detail2">
+                                <div class="card-text-container">
+                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <hr>
+        <!-- Section of embedded video -->
+        <section>
+            <div class="container-fluid">
+                <div class="row" >
+                    <div class="col-12 video-container">
+                        <figure class="wp-block-video">
+                            <div class="fluid-width-video-wrapper">
+                                <video controls="" src="https://res.cloudinary.com/css-tricks/video/upload/v1588889054/airpods-animation_g2qstg.mp4" name="fitvid1"></video>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <!-- Email Subscribe -->
+        <section></section>      
+    </main>
     <footer id="footer">
+        <div class="container-fluid">
+            <div class="row div-footer">
+                <div class="col-4 text-center">Resources</div>
+                <div class="col-3 col-lg-4 text-start">Company</div>
+                <div class="col-5 col-lg-4 text-center">Customer Service</div>
+                <div class="col-12 hr-fill"></div>
+                <div class="col-12 text-center">logo</div>
+            </div>
+            <div class="row div-footer text-center">
+                <div class="col-4"></div>
+                <div class="col-1">a</div>
+                <div class="col-1">b</div>
+                <div class="col-1">c</div>
+                <div class="col-1">d</div>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
