@@ -1,177 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6cf9269e4c.js" crossorigin="anonymous"></script>
     <title>Product Landing Page</title>
 </head>
+
 <body>
     <header id="header">
-        <img src="stacked-waves-haikei_1450by200.svg" id="header-img" alt="header image">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top justify-content-center">
-            <div class="container-fluid display-rels" >
-                <div class="col-6 col-md-1">
-                    <button class="btn navbar-toggler btn-landing" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="col-md-8 collapse navbar-collapse" id="navbarNav">                        
-                    <ul class="navbar-nav" id="navbar-nav">
-                        <li class="nav-item menu-item">
-                            <a class="nav-link  menubar-item active" aria-current="page" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link menubar-item" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link menubar-item" href="#">PRODUCT</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link menubar-item">SUPPORT</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3 nav-icons d-flex justify-content-evenly">
-                    <div class="menu-tools">
-                        <button class="btn btn-outline-light" style="border: 0;"><i class="fas fa-search"></i></button>         
-                    </div>
-                    <div class="menu-tools">
-                        <button class="btn btn-outline-light" style="border: 0;"><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                    <div class="menu-tools">
-                        <button class="btn btn-outline-light" style="border: 0;"><i class="fa-regular fa-user"></i></button>
+        <nav class="navbar navbar-expand-md">
+            <div class="container p-0">
+                <a class="navbar-brand" href="#"><img src="img/WORHLogo_Stacked.svg" alt="logo" title="RH"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="home" href="#">HOME</a>
+                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="#">PRODUCT</a>
+                        <a class="nav-link" href="#">SUPPORT</a>                
                     </div>
                 </div>
             </div>
-        </nav> 
+            <div class="nav-icons">
+                <button class="icon-button"><i class="fas fa-search"></i></button>
+                <button class="icon-button position-relative"><i class="fas fa-cart-plus"></i>
+                    <span class="position-absolute badge top-0 start-100 translate-middle rounded-pill bg-warning">2+
+                        <span class="visually-hidden">2 items</span>
+                </button>
+                <button class="icon-button"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </nav>
     </header>
     <main>
-        <!-- Section of Carousel Images -->
+        <!-- Section of Carousel  -->
         <section>
-                <div class="carousel-container" style="color:white">
-                    <div id="carousel-product-imgs" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carousel-product-imgs" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: -50px">
+                    <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="0"
+                        class="myBtn-carousel-nav active" style="background-color:black; width: 12px; height:12px; border-radius:50%;" 
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="1"
+                        class="myBtn-carousel-nav" style="background-color:black; width: 12px; height:12px; border-radius:50%; margin:0 15px 0 30px" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="2"
+                        class="myBtn-carousel-nav" style="background-color:black; width: 12px; height:12px; border-radius:50%; margin:0 30px 0 15px" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-product-imgs" data-bs-slide-to="3"
+                        class="myBtn-carousel-nav" style="background-color:black; width: 12px; height:12px; border-radius:50%;" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/car1.webp" alt="...1" class="d-block w-100 img-carousel">
+                        <div class="carousel-caption">
+                            <h2>Imagine Yourself Here</h2>
+                            <h4>Explore New Product Line</h4>
+                            <button type="button" class="myBtn">Detail</button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="carousel.svg" alt="...1" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4>Explore New Product Line</h4>
-                                    <p>Imagine Yourself Here</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="carousel2.svg" alt="...2" class="d-block w-100 img-carousel">
-                                
-                            </div>
-                            <div class="carousel-item">
-                                <img src="carousel3.svg" alt="...3" class="d-block w-100 img-carousel">
-                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car2.webp" alt="...2" class="d-block w-100 img-carousel">
+                        <div class="carousel-caption">
+                            <h4>Explore New Product Line</h4>
+                            <button type="button" class="myBtn">Detail</button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product-imgs" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-product-imgs" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car3.webp" alt="...3" class="d-block w-100 img-carousel">
+                        <div class="carousel-caption">
+                            <h4>Explore New Product Line</h4>
+                            <button type="button" class="myBtn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car4.webp" alt="...4" class="d-block w-100 img-carousel">
+                        <div class="carousel-caption">
+                            <h4>Explore New Product Line</h4>
+                            <button type="button" class="myBtn">Detail</button>
+                        </div>
                     </div>
                 </div>
-        </section>
-        <hr>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product-imgs"
+                    data-bs-slide="prev">
+                    <span class="fa fa-angle-left myBtn-carousel-arrow" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-product-imgs"
+                    data-bs-slide="next">
+                    <span class="fa fa-angle-right  myBtn-carousel-arrow" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>        
         <!-- Section of Cards -->
         <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
-                        <div class="card div-rounded" style="width:100%;">
-                            <img src="carousel3.svg" class="card-img-top card-img-product" alt="detail image">
-                            <div class="card-body div-detail detail1">
-                                <div class="card-text-container">
-                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
+            <div class="container px-2 py-5" id="custom-cards">
+                <h2 class="pb-2 border-bottom">DISCOVER MORE</h2>           
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card rounded-4 shadow-lg text-center">
+                            <img src="img/p4.webp" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body">
+                                <p class="card-text fs-5">Lorem, ipsum dolor.</p>
+                                <button type="button" class="myBtn-line">Detail</button>
                             </div>
                         </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-4 shadow-lg text-center">
+                            <img src="img/p5.webp" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body">
+                                <p class="card-text fs-5">Lorem, ipsum dolor.</p>
+                                <button type="button" class="myBtn-line">Detail</button>
 
-                    </div>
-                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
-                        <div class="card div-rounded" style="width:100%;">
-                            <img src="carousel2.svg" class="card-img-top" alt="detail image">
-                            <div class="card-body div-detail detail2">
-                                <div class="card-text-container">
-                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                    <div class="col">
+                        <div class="card rounded-4 shadow-lg text-center">
+                            <img src="img/p4.webp" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body">
+                                <p class="card-text fs-5">Lorem, ipsum dolor.</p>
+                                <button type="button" class="myBtn-line">Detail</button>
                             </div>
                         </div>
                     </div>
-                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
-                        <div class="card div-rounded" style="width:100%;">
-                            <img src="carousel3.svg" class="card-img-top" alt="detail image">
-                            <div class="card-body div-detail detail1">
-                                <div class="card-text-container">
-                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
+                    <div class="col">
+                        <div class="card rounded-4 shadow-lg text-center">
+                            <img src="img/p4.webp" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body">
+                                <p class="card-text fs-5">Lorem, ipsum dolor.</p>
+                                <button type="button" class="myBtn-line">Detail</button>
                             </div>
                         </div>
                     </div>
-                    <div class="c-12 col-md-6 col-xl-4 col-xxl-3 p-2">
-                        <div class="card div-rounded" style="width:100%;">
-                            <img src="carousel2.svg" class="card-img-top" alt="detail image">
-                            <div class="card-body div-detail detail2">
-                                <div class="card-text-container">
-                                    <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
+                    <div class="col">
+                        <div class="card rounded-4 shadow-lg text-center">
+                            <img src="img/p5.webp" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body">
+                                <p class="card-text fs-5">Lorem, ipsum dolor.</p>
+                                <button type="button" class="myBtn-line">Detail</button>
+                            </div>
+                        </div>
+                    </div>           
+                    <div class="col">
+                        <div class="card rounded-4 shadow-lg text-center">
+                            <img src="img/p4.webp" class="card-img-top card-img-product" alt="detail image">
+                            <div class="card-body">
+                                <p class="card-text fs-5">Lorem, ipsum dolor.</p>
+                                <button type="button" class="myBtn-line">Detail</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <hr>
+              </div>
+        </section>       
         <!-- Section of embedded video -->
         <section>
-            <div class="container-fluid">
-                <div class="row" >
-                    <div class="col-12 video-container">
-                        <figure class="wp-block-video">
-                            <div class="fluid-width-video-wrapper">
-                                <video controls="" src="https://res.cloudinary.com/css-tricks/video/upload/v1588889054/airpods-animation_g2qstg.mp4" name="fitvid1"></video>
-                            </div>
-                        </figure>
+            <div class="container px-2" id="custom-cards">
+                <h2 class="pb-2 border-bottom">DISCOVER MORE</h2>
+                <video poster="" loop="" controls="" class="">
+                    <source src="//cdn1.christopherguy.com/assets/video/overview-styletools.mp4" type="video/mp4"> 
+                </video>
+            </div>
+        </section>
+        <!-- Email Subscribe -->
+        <section>
+            <div class="container px-2 section-margin-top">
+                <h3 class="pb-2 border-bottom">Subscribe to our Newsletter</h3>
+                <div class="section-email-background">                
+                    <p class="text-center">Receive our newsletter and discover our stories.</p>
+                    <form id="form">
+                        <div class="email-form-container d-flex justify-content-center">
+                            <input type="email" id="email" class="email-input" placeholder="Email address" aria-describedby="emailSubscription">
+                            <button type="submit" class="myBtn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>       
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container-fluid footer-container" style="background-image:url('img/WORHLogo_Stacked.svg');">
+            <div class="row justify-content-around">
+                <div class="col d-none d-md-block ">
+                    <div class="footer-content">
+                        <p><a href="#" class="footer-link">Resources</a></p>
+                        <p><a href="#" class="footer-link">Locate a Gallery</a></p>
+                        <p><a href="#" class="footer-link">RH Members Program</a></p>
+                        <p><a href="#" class="footer-link">Site Map</a></p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block ">
+                    <div class="footer-content">
+                        <p><a href="#" class="footer-link">Company</a></p>
+                        <p><a href="#" class="footer-link">Letters From The CEO</a></p>
+                        <p><a href="#" class="footer-link">Leadership Team</a></p>
+                        <p><a href="#" class="footer-link">Press</p>
+                        <p><a href="#" class="footer-link">Careers</a></p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block ">
+                    <div class="footer-content">
+                        <p><a href="#" class="footer-link">Customer Service</a></p>
+                        <p><a href="#" class="footer-link">Contact Us</a></p>
+                        <p><a href="#" class="footer-link">Placing an Order</a></p>
+                        <p><a href="#" class="footer-link">Shipping & Delivery</a></p>
+                        <p><a href="#" class="footer-link">Returns & Exchanges</a></p>
+                        <p><a href="#" class="footer-link">Gift Registry</a></p>
+                        <p><a href="#" class="footer-link">FAQs</a></p>
                     </div>
                 </div>
             </div>
-        </section>    
-        <!-- Email Subscribe -->
-        <section></section>      
-    </main>
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="row div-footer">
-                <div class="col-4 text-center">Resources</div>
-                <div class="col-3 col-lg-4 text-start">Company</div>
-                <div class="col-5 col-lg-4 text-center">Customer Service</div>
-                <div class="col-12 hr-fill"></div>
-                <div class="col-12 text-center">logo</div>
-            </div>
             <div class="row div-footer text-center">
-                <div class="col-4"></div>
-                <div class="col-1">a</div>
-                <div class="col-1">b</div>
-                <div class="col-1">c</div>
-                <div class="col-1">d</div>
+                <div class="col">
+                    <button class="icon-button"><i class="fa-brands fa-facebook"></i></button>
+                    <button class="icon-button"><i class="fa-brands fa-instagram-square"></i></button>
+                    <button class="icon-button"><i class="fa-brands fa-instagram-square"></i></button>
+                    <button class="icon-button"><i class="fa-brands fa-youtube"></i></button>
+                </div>
             </div>
         </div>
     </footer>
     <!-- <script src="script.js"></script>  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 </html>
