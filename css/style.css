@@ -35,9 +35,9 @@ body {
 }
 
 /* Section of Carousel */
-.carousel-caption {
+/* .carousel-caption {
     text-align: left;
-}
+} */
 
 .carousel-caption h2 {
     display: block;   
@@ -115,7 +115,7 @@ video {
 
 /* Section of Email Subscription */
 .section-margin-top {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .section-email-background {
@@ -139,7 +139,7 @@ video {
 #footer {
     background-color: var(--main-button-background-color);
     color: #fff;
-    padding: 2rem 1rem 3rem 1rem;
+    padding: 3rem 0 2rem 0;
 }
 
 .footer-container {
@@ -149,11 +149,15 @@ video {
 
 .footer-link {
     color: #fff;
-    font-size: 1rem;
+    /* font-size: 1.2rem; */
 }
 
 .footer-link:hover {
     color: var(--hover-background-color);
+}
+
+.link-small {
+    font-size: 0.8rem;
 }
 
 .div-footer .icon-button{
