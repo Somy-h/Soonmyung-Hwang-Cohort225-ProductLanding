@@ -17,28 +17,48 @@
     <header id="header">
         <nav class="navbar navbar-expand-md">
             <div class="container p-2">
-                <a class="navbar-brand" href="#"><img src="img/WORHLogo_Stacked.svg" alt="logo" title="RH"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="d-none d-md-block">
+                    <a class="navbar-brand" href="#"><img src="img/WORHLogo_Stacked.svg" width="100px" alt="logo" title="RH"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="home" href="#">HOME</a>
                         <a class="nav-link" href="#">ABOUT US</a>
                         <a class="nav-link" href="#">PRODUCT</a>
-                        <a class="nav-link" href="#">SUPPORT</a>                
+                    </div>
+                </div>
+                <!-- Top Menu Icon Buttons. Search input is hidden on small screen. -->
+                <div class="nav-icons">
+                    <div class="offcanvas-sm offcanvas-start" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasSearchLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasSearch" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form id="form">
+                                <div class="search-container d-flex justify-content-center">
+                                    <input type="input" class="search-input" placeholder="SEARCH" aria-describedby="Search product">
+                                    <button type="Search" class="myBtn myBtn-small">Search</button>
+                                </div>
+                            </form>                
+                        </div>
+                    </div>
+                    <div class="icon-buttons-absolute">
+                        <button class="icon-button iconBtn-search" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                            <i class="fas fa-search"></i>
+                        </button>
+    
+                        <button class="icon-button position-relative"><i class="fas fa-cart-plus"></i>
+                            <span class="position-absolute badge top-0 start-100 translate-middle rounded-pill bg-warning">2+
+                                <span class="visually-hidden">2 items</span>
+                        </button>
+                        <button class="icon-button"><i class="fa-regular fa-user"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="nav-icons">
-                <button class="icon-button"><i class="fas fa-search"></i></button>
-                <button class="icon-button position-relative"><i class="fas fa-cart-plus"></i>
-                    <span class="position-absolute badge top-0 start-100 translate-middle rounded-pill bg-warning">2+
-                        <span class="visually-hidden">2 items</span>
-                </button>
-                <button class="icon-button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </nav>
+        </nav> 
     </header>
     <main>
         <!-- Section of Carousel  -->
@@ -102,7 +122,7 @@
         <section>
             <div class="container px-2 py-5" id="custom-cards">
                 <h2 class="pb-2 border-bottom">DISCOVER MORE</h2>           
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-2">
                     <div class="col">
                         <div class="card rounded-4 shadow-lg text-center">
                             <img src="img/p4.webp" class="card-img-top card-img-product" alt="detail image">
@@ -163,11 +183,12 @@
         </section>       
         <!-- Section of embedded video -->
         <section>
-            <div class="container px-2" id="custom-cards">
+            <div class="container px-2" id="video-container">
                 <h2 class="pb-2 border-bottom">DISCOVER MORE</h2>
-                <video poster="" loop="" controls="" class="">
+                <video id="video" poster="" loop="" controls="" class="">
                     <source src="//cdn1.christopherguy.com/assets/video/overview-styletools.mp4" type="video/mp4"> 
                 </video>
+                
             </div>
         </section>
         <!-- Email Subscribe -->
@@ -177,6 +198,8 @@
                 <div class="section-email-background">                
                     <p class="text-center">Receive our newsletter and discover our stories.</p>
                     <form id="form">
+                            <!-- <input type="email" id="email" class="email-input" placeholder="Email address" aria-describedby="emailSubscription">
+                            <button type="submit" class="myBtn">Subscribe</button> -->
                         <div class="email-form-container d-flex justify-content-center">
                             <input type="email" id="email" class="email-input" placeholder="Email address" aria-describedby="emailSubscription">
                             <button type="submit" class="myBtn">Subscribe</button>
